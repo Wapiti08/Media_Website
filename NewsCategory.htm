@@ -1,0 +1,310 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>新闻网栏目页</title>
+    <link href="StyleCss\News.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        /*定义两栏的栏目页NewsCategory.htm----------------------------开始--*/
+        /*左边的主要内容*/
+        #left-main-content
+        {
+            float: left;
+            width: 628px; /*956-(316+2+5+2+3)=628*/
+            background-color: #e6e8eb;
+            height: 100%;
+            border: 1px solid #72cfd7; /*画浅蓝色实线*/
+        }
+        /*右侧栏*/
+        #right-sidebar
+        {
+            float: left;
+            width: 316px;
+            background-color: #e7f2fb;/*背景色为淡蓝色,调试用，完成后最好删掉*/
+            margin-left: 7px;
+        }
+        
+        /*==用于NewsCategory.aspx,开始====*/
+        /*分类新闻列表区*/
+        #news_list
+        {
+            width: 100%;
+            background-color: #e7f2fb; /*背景色为淡蓝色,调试用，完成后最好删掉*/
+        }
+        /*新闻列表区中的标题*/
+        .news_list_title
+        {
+            font-size: 16px;
+            font-family: 黑体, Helvetica, sans-serif;
+            color: #000000;
+            background-color: #EAF6FF;
+            border: 1px solid #A2D8FF;
+            text-align: center;
+            height: 25px;
+            padding-top: 8px;
+        }
+        /*新闻列表区中的列表内容*/.news_list_content
+        {
+            color: #000000;
+            font-family: 宋体, Helvetica, sans-serif;
+            background-color: #FBFDFF;
+            border: 1px solid #c3e0f5;
+            line-height: 20px;
+            text-align: left;
+            padding: 10px;
+        }
+        /*新闻列表区中的页码*/.news_list_page
+        {
+            line-height: 20px;
+            text-align: center;
+            height: 20px;
+            border: 1px solid #c3e0f5;
+        }
+        /*==用于NewsCategory.aspx,结束====*/
+        
+        
+        /*==用于NewsCategory.aspx,NewsShow.aspx中的最新新闻。开始====*/
+        
+        /*最新新闻块*/
+        .new_news_box
+        {
+            margin-bottom: 10px; /*底边与footer的间距*/
+        }
+        /*最新新闻标题*/
+        .new_news_box .new_news_head
+        {
+            font-weight: bold;
+            color: #83443B;
+            background-color: #FFED9C;
+            text-align: center;
+            height: 15px;
+            padding: 3px;
+            border: 1px solid #FFD924;
+        }
+        /*最新新闻内容*/
+        .new_news_box .new_news_content
+        {
+            color: #000000;
+            background-color: #FFFCEE;
+            line-height: 20px;
+            text-align: left;
+            padding: 5px;
+            border: 1px solid #FFD924;
+        }
+        /*==用于NewsCategory.aspx,NewsShow.aspx中的最新新闻。结束====*/
+    </style>
+</head>
+<body>
+    <div id="container">
+        <!--页面层容器-开始-->
+        <div id="top">
+            <!--页眉-开始-->
+            <div id="top-left">
+                <a href="HomeNews.htm">欢迎光临"天下事新闻网"</a></div>
+            <div id="top-right">
+                <a href="UserLogin.htm">登录</a>&nbsp;&nbsp;<a href="UserRegister.htm">免费注册</a></div>
+            <!--页眉-结束-->
+        </div>
+        <div id="header">
+        </div>
+        <div id="nav">
+            <ul>
+                <li><a href="HomeNews.htm">首页</a></li>
+                <li><a href="NewsCategory.htm">国内新闻</a></li>
+                <li><a href="NewsCategory.htm">国际新闻</a></li>
+                <li><a href="NewsCategory.htm">财经股票</a></li>
+                <li><a href="NewsCategory.htm">娱乐明星</a></li>
+                <li><a href="NewsCategory.htm">饮食健康</a></li>
+                <li><a href="NewsCategory.htm">自然旅游</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <!--页面主体-开始-->
+            <div id="left-main-content">
+                <!--左侧主内容-开始-->
+                <div id="news_list">
+                    <div class="news_list_title">
+                        新闻列表
+                    </div>
+                    <div class="news_list_content">
+                        <table cellpadding="0" cellspacing="0" style="width: 97%;" border="0">
+                            <tr>
+                                <td style="width: 75%;">
+                                    ·<a href="NewsShow.htm">广州拟立法规定“裸官”不得担任要职</a>
+                                </td>
+                                <td>
+                                    2013/6/21 8:04
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 75%;">
+                                    ·<a href="NewsShow.htm">河南一七旬老人住所凌晨被偷拆 征收办不知情</a>
+                                </td>
+                                <td>
+                                    2013/6/21 8:04
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 75%;">
+                                    ·<a href="NewsShow.htm">河南周口交警队院内查违章每次收10元 领导否认</a>
+                                </td>
+                                <td>
+                                    2013/6/21 8:04
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 75%;">
+                                    ·<a href="NewsShow.htm">广州一村支书被曝身家超10亿元 全家移民加拿大</a>
+                                </td>
+                                <td>
+                                    2013/6/21 8:04
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 75%;">
+                                    ·<a href="NewsShow.htm">温州司法介入阻退房：不买房进班房</a>
+                                </td>
+                                <td>
+                                    2013/6/21 8:03
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 75%;">
+                                    ·<a href="NewsShow.htm">院士:汶川地震后四川百年将无强震说是误导</a>
+                                </td>
+                                <td>
+                                    2013/6/21 8:01
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 75%;">
+                                    ·<a href="NewsShow.htm">媒体分析称支持延迟退休者主要是官员和专家</a>
+                                </td>
+                                <td>
+                                    2013/6/21 8:01
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 75%;">
+                                    ·<a href="NewsShow.htm">山东临沂大学党委书记丁凤云涉嫌严重违纪违法</a>
+                                </td>
+                                <td>
+                                    2013/6/21 8:01
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 75%;">
+                                    ·<a href="NewsShow.htm">蒙牛承认一冰淇淋代工厂脏乱差 称责任人被停职</a>
+                                </td>
+                                <td>
+                                    2013/6/21 8:01
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 75%">
+                                    ·<a href="NewsShow.htm">南海油气被掠夺调查：中国在南沙没有1口油井</a>
+                                </td>
+                                <td>
+                                    2013/6/21 8:01
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 75%;">
+                                    ·<a href="NewsShow.htm">煤业大迁徙背后：每年雾霾导致25万人过早死</a>
+                                </td>
+                                <td>
+                                    2013/6/21 8:00
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 75%;">
+                                    ·<a href="NewsShow.htm">深圳医疗系统爆出大面积腐败引发关注</a>
+                                </td>
+                                <td>
+                                    2013/6/19 19:12
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 75%;">
+                                    ·<a href="NewsShow.htm">深圳官员醉驾被免究刑责:法院称驾驶距离不远</a>
+                                </td>
+                                <td>
+                                    2013/6/19 19:10
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="news_list_page">
+                        <a href="#">首页</a> <a href="#">上一页</a> <a href="#">下一页</a> <a href="#">尾页</a> 第
+                        1页/共 8 条新闻
+                    </div>
+                </div>
+                <!--左侧主内容-结束-->
+            </div>
+            <div id="right-sidebar">
+                  <!--右侧边栏-开始-->
+                <div class="new_news_box">
+                    <div class="new_news_head">
+                        最新消息</div>
+                    <div class="new_news_content">
+                        <a href="NewsShow.htm">·广州拟立法规定“裸官”不得担任要职</a><br />
+                        <a href="NewsShow.htm">·河南一七旬老人住所凌晨被偷拆 征收办不知</a><br />
+                        <a href="NewsShow.htm">·欧洲航空安全局取消飞机上禁用电子设备限制</a><br />
+                        <a href="NewsShow.htm">·北京打击非法一日游抓获126人卖假玉日赚50</a><br />
+                        <a href="NewsShow.htm">·托尔斯泰主题展展出255件展品 含油画、手稿</a><br />
+                        <a href="NewsShow.htm">·美科学家称已证明黑洞不存在 或摇动大爆炸</a><br />
+                        <a href="NewsShow.htm">·饮食推荐：山药搭配白萝卜养胃益脾</a><br />
+                        <a href="NewsShow.htm">·世界各国奇特旅游法多 小心中招(组图)</a><br />
+                        <a href="NewsShow.htm">·世卫组织：埃博拉已致3000多人死亡</a><br />
+                        <a href="NewsShow.htm">·福布斯百大收入运动员榜首易主国</a><br />
+                        <a href="NewsShow.htm">·强力接应对话曾春蕾眼前一亮 她觉</a><br />
+                        <a href="NewsShow.htm">·中国女羽4选3谜底实已揭晓 王适去</a><br />
+                        <a href="NewsShow.htm">·中国女拳收获意外惊喜 董程获将出</a><br />
+                        <a href="NewsShow.htm">·陆善真透露程菲跟腱断裂 恢复期不铁</a><br />
+                        <a href="NewsShow.htm">·体操队奥运名单确定：邹凯陈一围 </a>
+                        <br />
+                        <a href="NewsShow.htm">·深圳医疗系统爆出大面积腐败引发注</a><br />
+                        <a href="NewsShow.htm">·万合校园O2O活动高潮再起 学姐葛布智霸高校</a><br />
+                        <a href="NewsShow.htm">·朝鲜官方要求各驻朝使馆撤离 中俄紧急磋商</a><br />
+                    </div>
+                </div>
+                <div class="new_news_box">
+                    <div class="new_news_head">
+                        阅读排行</div>
+                    <div class="new_news_content">
+                        <a href="NewsShow.htm">·河南一七旬老人住所凌晨被偷拆 征收办不知</a><br />
+                        <a href="NewsShow.htm">·广州拟立法规定“裸官”不得担任要职</a><br />
+                        <a href="NewsShow.htm">·北京打击非法一日游抓获126人卖假玉日赚50</a><br />
+                        <a href="NewsShow.htm">·河南周口交警队院内查违章每次收10元 领导</a><br />
+                        <a href="NewsShow.htm">·广州一村支书被曝身家超10亿元 全家移民加</a><br />
+                        <a href="NewsShow.htm">·温州司法介入阻退房：不买房进班房</a><br />
+                        <a href="NewsShow.htm">·饮食推荐：山药搭配白萝卜养胃益脾</a><br />
+                        <a href="NewsShow.htm">·朝鲜谴责韩总统联大发言 称要“消灭”朴槿</a><br />
+                        <a href="NewsShow.htm">·世卫组织：埃博拉已致3000多人死亡</a><br />
+                        <a href="NewsShow.htm">·福布斯百大收入运动员榜首易主国</a><br />
+                        <a href="NewsShow.htm">·强力接应对话曾春蕾眼前一亮 她觉</a><br />
+                        <a href="NewsShow.htm">·中国女羽4选3谜底实已揭晓 王适去</a><br />
+                        <a href="NewsShow.htm">·中国女拳收获意外惊喜 董程获将出</a><br />
+                        <a href="NewsShow.htm">·陆善真透露程菲跟腱断裂 恢复期不铁</a><br />
+                        <a href="NewsShow.htm">·体操队奥运名单确定：邹凯陈一围 </a>
+                        <br />
+                        <a href="NewsShow.htm">·深圳医疗系统爆出大面积腐败引发注</a><br />
+                        <a href="NewsShow.htm">·深圳官员醉驾被免究刑责:法院驶距</a><br />
+                        <a href="NewsShow.htm">·靠性感立足港台的十大内地(图）</a><br />
+                        <a href="NewsShow.htm">·朝鲜官方要求各驻朝使馆撤离 中俄紧急磋商</a><br />
+                    </div>
+                </div>
+                <!--右侧边栏-结束-->
+            </div>
+            <!--页面主体-结束-->
+        </div>
+        <div id="footer">
+            <!--页脚-开始-->
+            Copyright 2010-2020 版权所有&nbsp;<a href="Admin\HomeAdmin.htm">后台管理</a><br />
+            地址：中国•北京 热线：010-82011666
+            <!--页脚-结束-->
+        </div>
+        <!--页面层容器-结束-->
+    </div>
+</body>
+</html>

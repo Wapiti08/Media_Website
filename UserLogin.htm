@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>会员登录</title>
+    <link href="StyleCss\News.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        #main-content
+        {
+            line-height: 30px;
+            background-color: #EAF6FF;
+            border: 1px solid #A2D8FF;
+            margin: 0px auto;
+        }
+        .table_content
+        {
+            margin: 60px auto; /*重新定义表格层容器的上距*/
+        }
+        #Text1
+        {
+            width: 150px;
+        }
+        #Text2
+        {
+            width: 150px;
+        }
+        .style1
+        {
+            width: 40%;
+            text-align: right;
+            height: 32px;
+        }
+        .style2
+        {
+            text-align: left;
+            height: 32px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <!--页面层容器-开始-->
+        <!--页眉-开始-->
+        <div id="top">
+            <div id="top-left">
+                <a href="HomeNews.htm">欢迎光临"天下事新闻网"</a></div>
+            <div id="top-right">
+                <a href="UserLogin.htm">登录</a>&nbsp;&nbsp;<a href="UserRegister.htm">免费注册</a></div>
+        </div>
+        <div id="header">
+        </div>
+        <div id="nav">
+            <ul>
+                <li><a href="HomeNews.htm">首页</a></li>
+                <li><a href="NewsCategory.htm">国内新闻</a></li>
+                <li><a href="NewsCategory.htm">国际新闻</a></li>
+                <li><a href="NewsCategory.htm">财经股票</a></li>
+                <li><a href="NewsCategory.htm">娱乐明星</a></li>
+                <li><a href="NewsCategory.htm">饮食健康</a></li>
+                <li><a href="NewsCategory.htm">自然旅游</a></li>
+            </ul>
+        </div>
+        <!--页眉-结束-->
+        <div id="content">
+            <!--页面主体-开始-->
+            <div id="main-content">
+                <div class="table_content">
+                    <!--表格层容器-开始-->
+                    <table>
+                        <tr>
+                            <th class="td_left">
+                            </th>
+                            <th class="td_right" colspan="3">
+                                &nbsp; &nbsp;&nbsp;登 录
+                            </th>
+                        </tr>
+                        <tr>
+                            <td class="td_left">
+                                用户名：
+                            </td>
+                            <td class="td_right" colspan="3" style="color: #FF0000">
+                                <input id="Text1" type="text" />必须输入!只能输入字母和(或)数字！
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_left">
+                                密码：
+                            </td>
+                            <td class="td_right" colspan="3" style="color: #FF0000">
+                                <input id="Text2" type="text" />必须输入！只能输入字母和(或)数字！
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_left">
+                                验证码：
+                            </td>
+                            <td class="td_right">
+                                <input id="Text3" type="text" size="5" />
+                            </td>
+                            <td class="td_right">
+                                <img id="imgCode" alt="看不清，请单击我！" src="ImagesTemp/ValidateCode.gif"
+                                    onclick="this.src=this.src+'?'" style="width: 50px; height: 24px" />
+                               </td>
+                            <td class="td_right">
+                                 按图中字符填写，不区分大小写！单击换一组验证码</td>
+                        </tr>
+                        <tr>
+                            <td class="td_left">
+                                登录保留：
+                            </td>
+                            <td class="td_right" colspan="3">
+                                <select id="Select1" name="D2">
+                                    <option>一次</option>
+                                    <option>一个月</option>
+                                    <option>一年</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style1">
+                            </td>
+                            <td class="style2" colspan="3">
+                                <input id="Button1" type="button" value="登录" class="button" />&nbsp;
+                                <a href="UserRegister.htm" style="text-decoration: underline">注册新会员</a>&nbsp;
+                                <a href="UserRetakePassword.htm" style="text-decoration: underline">忘记密码</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_left">
+                            </td>
+                            <td class="td_right" colspan="3">
+                            </td>
+                        </tr>
+                     
+                    </table>
+                    <!--表格层容器-结束-->
+                </div>
+            </div>
+            <div style="clear: both; display: block">
+            </div>
+            <!--页面主体-结束-->
+        </div>
+        <div id="footer">
+            <!--页脚-开始-->
+            Copyright 2010-2020 版权所有&nbsp;<a href="Admin\HomeAdmin.htm">后台管理</a><br />
+            地址：中国•北京 热线：010-82011666
+            <!--页脚-结束-->
+        </div>
+        <!--页面层容器-结束-->
+    </div>
+</body>
+</html>

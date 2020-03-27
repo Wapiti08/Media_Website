@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title></title>
+    <link href="CSS/Admin.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+    
+        #TextArea1
+        {
+            height: 160px;
+            width: 655px;
+        }
+    
+        .style1
+        {
+            width: 14%;
+            text-align: right;
+        }
+    
+    </style>
+</head>
+<body>
+<div id="right-frame-content">
+    <table width="99%" border="0" cellspacing="2" cellpadding="0" class="t2">
+        <tr>
+            <th colspan="2">
+                修改关键词
+            </th>
+        </tr>
+        <tr>
+            <td class="style1">
+                关键词分类：
+            </td>
+            <td class="tdleft">
+                <select id="Select1" name="D1">
+                    <option>国内新闻</option>
+                    <option>国外新闻</option>
+                    <option>体育新闻</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td class="style1">
+                关键词标题：
+            </td>
+            <td class="tdleft">
+                <input id="Text1" type="text" />*
+            </td>
+        </tr>
+        <tr>
+            <td class="style1">
+                作者来源：
+            </td>
+            <td class="tdleft">
+                <input id="Text2" type="text" />
+            </td>
+        </tr>
+        <tr>
+            <td class="style1">
+                新闻图片：
+            </td>
+            <td class="tdleft">
+                <input id="File1" type="file" /></td>
+        </tr>
+        <tr>
+            <td class="style1">
+                关键词内容：
+            </td>
+            <td class="tdleft">
+                <textarea id="TextArea1" name="S1" cols="60" rows="8"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td class="center" colspan="2">
+                <input id="Button1" type="button" value="更新" /> &nbsp;<input id="Reset1" type="reset" value="不更新返回" />
+            </td>
+        </tr>
+        <tr>
+            <td class="center" colspan="2">
+                提示信息
+            </td>
+        </tr>
+    </table>
+    </div>
+</body>
+</html>

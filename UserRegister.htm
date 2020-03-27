@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>注册新会员</title>
+    <link href="StyleCss\News.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        #main-content
+        {
+            line-height: 30px;
+            background-color: #EAF6FF;
+            border: 1px solid #A2D8FF;
+            margin: 0px auto;
+        }
+        .table_content
+        {
+            margin: 10px auto; /*重新定义表格层容器的上距*/
+        }
+        #Text1
+        {
+            width: 151px;
+        }
+        #Password1
+        {
+            width: 151px;
+        }
+        #Password2
+        {
+            width: 151px;
+        }
+        #Select1
+        {
+            width: 150px;
+        }
+        .style1
+        {
+            width: 40%;
+            text-align: right;
+            height: 32px;
+        }
+        .style2
+        {
+            text-align: left;
+            height: 32px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <!--页面层容器-开始-->
+        <div id="top">
+            <div id="top-left">
+                <a href="HomeNews.htm">欢迎光临"天下事新闻网"</a></div>
+            <div id="top-right">
+                <a href="UserLogin.htm">登录</a>&nbsp;&nbsp;<a href="UserRegister.htm">免费注册</a></div>
+        </div>
+        <div id="header">
+        </div>
+        <div id="nav">
+            <ul>
+                <li><a href="HomeNews.htm">首页</a></li>
+                <li><a href="NewsCategory.htm">国内新闻</a></li>
+                <li><a href="NewsCategory.htm">国际新闻</a></li>
+                <li><a href="NewsCategory.htm">财经股票</a></li>
+                <li><a href="NewsCategory.htm">娱乐明星</a></li>
+                <li><a href="NewsCategory.htm">饮食健康</a></li>
+                <li><a href="NewsCategory.htm">自然旅游</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <!--页面主体-开始-->
+            <div id="main-content">
+                <div class="table_content">
+                    <!--表格层容器-开始-->
+                    <table border="0">
+                        <tr>
+                            <th class="td_left">
+                            </th>
+                            <th class="td_right" colspan="3">
+                                &nbsp;&nbsp;&nbsp;&nbsp; 会员注册
+                            </th>
+                        </tr>
+                        <tr>
+                            <td class="td_left">
+                                注册名：
+                            </td>
+                            <td class="td_right" colspan="3">
+                                <input id="Text1" type="text" />
+                                <span style="color: red">*<a href="#">检查注册名</a></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_left">
+                                密码：
+                            </td>
+                            <td class="td_right" colspan="3">
+                                <input id="Password1" type="password" />
+                                <span style="color: red">*</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_left">
+                                再输入一遍密码：
+                            </td>
+                            <td class="td_right" colspan="3">
+                                <input id="Password2" type="password" />
+                                <span style="color: red">*</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_left">
+                                性别：
+                            </td>
+                            <td class="td_right" colspan="3">
+                                <input id="Radio1" type="radio" checked="checked" />男
+                                <input id="Radio2" type="radio" />女
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_left">
+                                电子邮件地址：
+                            </td>
+                            <td class="td_right" colspan="3">
+                                <input type="text" style="width: 151px" />
+                                <span style="color: red">*</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_left">
+                                提示的问题：
+                            </td>
+                            <td class="td_right" colspan="3">
+                                <select id="Select1">
+                                    <option>你最喜欢吃的食品？</option>
+                                    <option>你最喜爱的运动？</option>
+                                    <option>你最好朋友的名字？</option>
+                                    <option>你最喜欢的明星？</option>
+                                    <option>你的宠物名字？</option>
+                                    <option>你最爱看的小说？</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_left">
+                                提示问题的回答：
+                            </td>
+                            <td class="td_right" colspan="3">
+                                <input type="text" style="width: 151px" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style1">
+                                验证码：
+                            </td>
+                            <td class="style2">
+                                <input type="text" style="width: 59px" />
+                                
+                            </td>
+                            <td class="style2">
+                                <img id="imgCode" alt="看不清，请单击我!" src="ImagesTemp/ValidateCode.gif" style="cursor: hand; width: 55px; height: 25px" /></td>
+                            <td class="style2">
+                                按图中字符填写，不区分大小写，单击图片换一组验证码</td>
+                        </tr>
+                        <tr>
+                            <td class="td_left">
+                            </td>
+                            <td class="td_right" colspan="3">
+                                <input type="checkbox" />同意 <a href="UseTreaty.htm" target="_blank" style="text-decoration: underline;">
+                                    网站服务条款</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_left">
+                            </td>
+                            <td class="td_right" colspan="3">
+                                &nbsp; &nbsp;<input type="button" value="注册" class="button" />
+                                &nbsp;<input type="button" value="返回" class="button" />
+                            </td>
+                        </tr>
+                    </table>
+                    <!--表格层容器-结束-->
+                </div>
+                <!--页面主题-结束-->
+            </div>
+            <div id="footer">
+                <!--页脚-开始-->
+                Copyright 2010-2020 版权所有&nbsp;<a href="Admin\HomeAdmin.htm">后台管理</a><br />
+                地址：中国•北京 热线：010-82011666
+                <!--页脚-结束-->
+            </div>
+            <!--页面层容器-结束-->
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+2015-12-20 12:55:28 AS: Action: Determine whether it is Wow Mode
+2015-12-20 12:55:28 AS: Result: False
+2015-12-20 12:55:28 AS: --------------------------------------------------
+2015-12-20 12:55:28 AS: Action: Validate Input Arguments
+2015-12-20 12:55:28 AS: Invalid command line argument. Value=D:\网站最终建设\keywords\App_Data\keywordsDB.mdf
+2015-12-20 12:55:28 AS: Action: Detecting Service Name
+2015-12-20 12:55:28 AS: Result: MSOLAP$
+2015-12-20 12:55:28 AS: Action: (Utility) Detecting Service Logon Account for Service MSOLAP$
+2015-12-20 12:55:28 Slp: Sco: Attempting to open SC Manager
+2015-12-20 12:55:28 Slp: Sco: Attempting to open service handle for service MSOLAP$
+2015-12-20 12:55:28 Slp: Sco: Attempting to close SC Manager
+2015-12-20 12:55:28 AS: Result: (Utility) No Such Service Exists
+2015-12-20 12:55:28 AS: Action: (Utility) Detecting whether instance is named instance
+2015-12-20 12:55:28 AS: Exception: (Utility) 实例名称不能为空。请指定实例名称。
+2015-12-20 12:55:28 AS: Result: (Utility) Error
